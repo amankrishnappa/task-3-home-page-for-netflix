@@ -1,0 +1,124 @@
+//html code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix SignUp Form</title>
+    <link href="https://fonts.googleapis.com/
+     css2?family=Lexend+Zetta&family=Poppins:wght@300&display=swap" 
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2092db7cc5.js" 
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="logo.png" alt="Netflix">
+        <button type="button" class="btn">SignUp</button>
+        <form>
+
+            <h1>Unlimited movies, TV Shows and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <input type="text" name="" id="txt-box" placeholder="Email address">
+            <button id="btn">TRY 30 DAYS FREE <i class="fas fa-angle-right"></i>
+             </button>
+
+            <br><span>Ready to Watch? Enter your email to creat or
+                access your account.
+            </span>
+        </form>
+    </section>
+</body>
+</html>
+
+//css code
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+section::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(background.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* set black overlay on the image */
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.808);
+}
+img{
+    width: 196px;
+    height: 87px;
+}
+form{
+    text-align: center;
+    padding: 25px;
+    margin-top: 8rem;
+}
+.btn{
+    background: rgba(223, 26, 26, 0.925);
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 28px;
+}
+/* Now set Hover on button */
+.btn:hover{
+    background-color: white;
+    color: red;
+}
+h1{
+    font-size: 3rem;
+    padding: 10px;
+}
+p{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+#txt-box{
+    border: none;
+    padding: 14px 16px;
+    margin: 20px;
+    width: 400px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+#btn{
+    border: none;
+    padding: 15px 8px;
+    width: 215px;
+    background:rgba(223, 26, 26, 0.925) ;
+    font-size: 13px;
+    margin-left: -26px;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+/* Now set hover on above coding button */
+#btn:hover{
+    background-color: black;
+    color: red;
+}
+.fas{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
